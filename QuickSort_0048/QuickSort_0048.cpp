@@ -78,7 +78,11 @@ void q_sort(int low, int high)
         swap(low, j);
     }
         
+    // recursive call to sort te left sub array
+    q_sort(low, j - 1); //step 12
 
+    // recursive callto sort the left sub array
+    q_sort(j + 1, high); //step 13
 }
 
 int main()

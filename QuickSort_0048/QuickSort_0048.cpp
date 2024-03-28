@@ -85,6 +85,10 @@ void q_sort(int low, int high)
     q_sort(j + 1, high); //step 13
 }
 
+void display() {
+
+}
+
 int main()
 {
     

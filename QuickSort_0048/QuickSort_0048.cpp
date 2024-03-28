@@ -50,6 +50,30 @@ void q_sort(int low, int high)
     pivot = arr[low]; //step 2
     i = low + 1; //step 3
     j = high; // step 4
+
+    while (i <= j) //step 10
+    {
+        // search for an element grater than pivot
+        while ((arr[i] <= pivot) && (i <= high))
+        {
+            i++; //step 6
+            cmp_count++;
+        }
+        cmp_count++;
+        //search for an element less than or equal tp pivot
+        while ((arr[j] > pivot) && (j >= low)) //step 7
+        {
+            j--; // step 8
+            cmp_count++;
+        }
+        cmp_count++;
+        if (i < j) // swap the element at index i with the element at index j
+        {
+            swap(i, j);
+        }
+    }
+        
+
 }
 
 int main()

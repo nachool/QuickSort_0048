@@ -33,7 +33,10 @@ void input() {
 //swap the element at indexx with the element at index y
 void swap(int x, int y)
 {
-
+    int temp = arr[x];
+    arr[x] = arr[y];
+    arr[y] = temp;
+    mov_count++;
 }
 
 int main()

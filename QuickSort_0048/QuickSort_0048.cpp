@@ -103,6 +103,8 @@ int main()
 {
     char ch;
 
-    
+    do {
+
+    } while (true);
 }
 
